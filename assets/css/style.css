@@ -1,0 +1,152 @@
+/* Universal Selector */
+* {
+  margin:0;
+  padding:0; 
+  font-family: "Alegreya Web Safe Font";
+}
+
+/* Element Selectors */
+body {
+  position: relative;
+  font-size: 20px;
+  background-color: whitesmoke;
+  color: #0f0f0f;
+}
+
+h1,
+h2 {
+  margin: 20px;
+}
+
+main {
+  padding: 60px 0;
+}
+
+li {
+  display: inline;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FDF8F5;
+}
+
+header {
+  border-bottom: 10px solid #0f0f0f;
+}
+
+header,
+footer {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #0f0f0f;
+  position: absolute;
+}
+
+footer {
+  position: absolute;
+  margin-top: 0;
+  bottom: 0;
+  border-bottom: 10px solid #0f0f0f;
+  color: whitesmoke;    
+}
+
+figure {
+  margin-bottom: 40px;
+}
+
+img {
+  display: block;
+  margin: 45px auto;
+  height: 350px;
+}
+
+section {
+  margin-bottom: 0;
+  padding: 20px 10px 40px 10px;
+  background-color: whitesmoke;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  padding: 30px;
+  border: 2px solid #0f0f0f;
+  line-height: 45px;
+  height: 150px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+  
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid #0f0f0f;
+}
+
+textarea {
+  vertical-align: top;
+  height: 60px;
+}
+  
+button {
+  height: 40px;
+  width: 120px;
+  background-color: #0f0f0f;
+  color: #FDF8F5;
+  margin: 25px;
+}
+ 
+/* Class Selectors */
+.name {  
+  writing-mode: vertical-lr;
+  text-orientation:upright;
+  text-decoration-line: overline;
+  text-decoration-thickness: 2px;
+  letter-spacing: 15px;
+  position: absolute;
+  margin-top: 40px;
+  word-spacing: 20px;
+  padding-right: 15px;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: center;
+  word-spacing: 100px;
+  font-size: 20px;
+
+}
+#nav-links {
+  display: inline-block;
+  position: relative;
+  color: #0f0f0f;
+}
+#nav-links:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+
+}
+
+#nav-links:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
